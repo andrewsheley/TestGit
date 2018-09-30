@@ -18,7 +18,7 @@ namespace TestGit.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            ViewData["PhoneNumber"] = "(785)554-1234";
             return View();
         }
 
