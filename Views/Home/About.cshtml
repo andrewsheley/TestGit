@@ -1,6 +1,21 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
+
+@section scripts {
+    <script type="text/javascript">
+     (function($){
+         alert("self invoke");
+      })(jQuery);
+
+$(function(){
+  alert("I'm a ready shortcut");
+});
+
+      </script>
+}
+
+
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
